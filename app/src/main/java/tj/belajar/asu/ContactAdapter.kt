@@ -27,7 +27,7 @@ class ContactAdapter(val phoneItemList: List<PhoneData>, val clickListener: (Pho
     class PartViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(phone: PhoneData, clickListener: (PhoneData) -> Unit){
             itemView.tv_part_item_name.text= phone.contactName
-            itemView.tv_part_item_id.text=phone.phone.toString()
+            itemView.tv_part_id.text=phone.phone.toString()
             itemView.setOnClickListener{clickListener(phone)}
         }
     }

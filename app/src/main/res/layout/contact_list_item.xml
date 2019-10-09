@@ -14,7 +14,7 @@
         android:textSize="20sp"
         tools:text="Contact name"/>
     <TextView
-        android:id="@+id/tv_part_item_id"
+        android:id="@+id/tv_part_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="15sp"
