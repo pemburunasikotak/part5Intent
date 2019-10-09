@@ -2,7 +2,7 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="tj.belajar.asu">
+    package="tj.belajar.git">
 
     <application
         android:allowBackup="true"
@@ -19,8 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        
         <activity
             android:parentActivityName=".PhoneDetailActivity"
             android:name=".PhoneDetailActivity">

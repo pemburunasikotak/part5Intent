@@ -14,22 +14,22 @@ class MainActivity : AppCompatActivity() {
         val testData = createPhoneDate()
         rv_part.layoutManager = LinearLayoutManager(this)
         rv_part.setHasFixedSize(true)
-        rv_part.adapter = ContactAdapter(testData, {PhoneItem : PhoneData->phoneItemClicked(PhoneItem)})
+        rv_part.adapter = ContactAdapter(testData, {phoneItem : PhoneData->phoneItemClicked(phoneItem)})
     }
 
 
 
-    private fun phoneItemClicked (PhoneItem : PhoneData){
+    private fun phoneItemClicked (phoneItem : PhoneData){
         val  showDetailActivityIntent = Intent(this, PhoneDetailActivity::class.java)
-        showDetailActivityIntent.putExtra(Intent.EXTRA_TEXT, PhoneItem.phone.toString())
+        showDetailActivityIntent.putExtra(Intent.EXTRA_TEXT, phoneItem.phone.toString())
         startActivity(showDetailActivityIntent)
     }
 
     private fun createPhoneDate() : List<PhoneData>{
         val partList = ArrayList<PhoneData>()
-        partList.add(PhoneData(3043789,"alpa"))
-        partList.add(PhoneData(3563587,"paihi"))
-        partList.add(PhoneData(3343254,"asu6i"))
+        partList.add(PhoneData(85786534862,"Tj"))
+        partList.add(PhoneData(85786534861,"JK"))
+        partList.add(PhoneData(85786534863,"TK"))
         return partList
     }
 }

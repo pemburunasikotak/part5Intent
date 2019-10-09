@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.activity_phone_detail.*
 import kotlinx.android.synthetic.main.contact_list_item.*
 import java.time.Instant
 
-class PhoneDetailActivity(contentLayoutId: Int) : AppCompatActivity() {
+class PhoneDetailActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
